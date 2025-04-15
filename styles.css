@@ -1,15 +1,15 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     text-align: center;
-    color: #333;
+    color: white;
     margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #ff758c;
     padding: 20px;
-    color: white;
+    background: rgba(0, 0, 0, 0.3);
     font-size: 24px;
 }
 
@@ -17,23 +17,29 @@ main {
     margin-top: 50px;
 }
 
-button {
-    background: #ff758c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-button:hover {
+.animated-button {
+    text-decoration: none;
+    color: white;
+    background: #ff758c;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.animated-button:hover {
     background: #e85d75;
+    transform: scale(1.1);
 }
 
 footer {
     margin-top: 50px;
     padding: 10px;
-    background: #333;
-    color: white;
+    background: rgba(0, 0, 0, 0.3);
 }
